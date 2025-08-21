@@ -1,10 +1,11 @@
 colorama==0.4.3
-hypothesis == 6.54
-mypy == 0.971
-numba == 0.56
-numpy == 1.22
-pre-commit == 2.20.0
-pytest == 7.1.2
-pytest-env
-pytest-runner == 5.2
-typing_extensions
+hypothesis==6.54.0
+mypy==0.971
+# numba==0.58  # 暂时注释，不支持 Python 3.12
+numpy>=1.26.0  # ✅ 支持 Python 3.12
+pre-commit==2.20.0
+# 修改 requirements.txt，把 pytest 改成：
+pytest>=7.3.1
+pytest-env==0.8.2
+pytest-runner==5.2
+typing_extensions==4.3.0
